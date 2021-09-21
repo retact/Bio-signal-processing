@@ -3,9 +3,9 @@ Full text of task code
 
 
 ## Task1
-![Fig1]()
-![Fig2]()
-![Figu3]()
+![Fig1](image/figure1.jpg)
+![Fig2](image/figure2.jpg)
+![Fig3](image/figure3.jpg)
 ```test.m
 %%% Task1
 % load matfile
@@ -31,7 +31,7 @@ ylim([-128,127]);
 ```
 
 ## Task2
-![Fig4]()
+![Fig4](image/figure4.jpg)
 ``` test.m
 ....
 %%% Task2
@@ -45,7 +45,7 @@ ylim([-128,127]);
 ```
 
 ## Task3
-![Fig5]()
+![Fig5](image/figure5.jpg)
 ```test.m
 ...
 %%%  Task3
