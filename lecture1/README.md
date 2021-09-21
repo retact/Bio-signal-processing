@@ -1,5 +1,7 @@
 # Lecture1 2021-09-21
-Full text of task code
+I made it gnarly in python to make it a little more interesting like this.
+
+
 
 
 ## Task1
