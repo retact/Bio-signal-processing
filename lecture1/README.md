@@ -1,8 +1,6 @@
 # Lecture1 2021-09-21
-I made it gnarly in python to make it a little more interesting like this.
-
-
-
+I made it gnarly in python to make it a little more interesting like this.  
+![eeg-anime](image/eeg-anim.gif)
 
 ## Task1
 ![Fig1](image/figure1.jpg)
