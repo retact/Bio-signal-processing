@@ -9,15 +9,14 @@ import matplotlib.animation as animation
 data = io.loadmat('../EEG-sample/close.mat')
 showdata = data['y']
 plt.plot(showdata[0], showdata[1])
-plt.show()
 print(showdata.shape)
 
 
 def eeg_3d(showdata, starttime=0, endtime=60):
     # Method to display eegdata in 3d.
-    fig = plt.figure(figsize=(20, 5))
+    fig = plt.figure(figsize=(10, 5))
     ax = fig.add_subplot(111, projection="3d")
-    ax.view_init(elev=40, azim=-165)
+    ax.view_init(elev=30, azim=-165)
     for i in range(8):
         plt.plot(showdata[0, 256*starttime+1:256*endtime],
                  np.full_like(showdata[0, 256*starttime+1:256*endtime], i+1),
@@ -31,12 +30,12 @@ def eeg_3d(showdata, starttime=0, endtime=60):
 eeg_3d(showdata, starttime=5, endtime=6)
 
 # Attaching 3D axis to the figure
-fig = plt.figure(figsize=(20, 5))
+fig = plt.figure(figsize=(10, 5))
 ax = fig.add_subplot(111, projection="3d")
 ax.set_xlabel('Time', fontsize=10)
 ax.set_ylabel('Electrodes', fontsize=10)
 ax.set_zlabel('microV', fontsize=10)
-ax.view_init(elev=40, azim=-165)
+ax.view_init(elev=25, azim=-165)
 ax.xaxis._axinfo['label']['space_factor'] = 0.2
 ax.set(zlim=[-128, 128])
 
