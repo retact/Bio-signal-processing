@@ -4,7 +4,7 @@ load('close.mat');
 figure(1);
 plot(y(1,:),y(2:9,:));
 % extract main data
-closeEEG=y(:,256*20+1:length(y));
+closeEEG=y(:,256*10+1:length(y));
 figure(2)
 % plot the data
 plot(closeEEG(1,:),closeEEG(8,:))
@@ -29,6 +29,7 @@ title('EEG waveform at Oz - eyes closed(3ch)');
 ylim([-128,127]);
 
 %%%  Task3
+closeEEG=y(:,1:length(y));
 figure(5)
 plot(closeEEG(1, 256*9+1:256*11),closeEEG(4,256*9+1:256*11))
 xlabel('Time (s)');
