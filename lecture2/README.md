@@ -1,4 +1,4 @@
-# Lecture1 2021-10-04
+# Lecture2 2021-10-04
 
  I made a frequency analyzer of brain waves with a window size of 1000ms and a slide size of 500ms.　　
  
