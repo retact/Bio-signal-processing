@@ -5,6 +5,7 @@ Spectrogram analysis of the closeEEG was performed with a window size of 1000 ms
 
 ![eeg-spectrogram](image/spectrogram.png)  
  
+ 
 ``` spectrogram.py
 import numpy as np
 import matplotlib.pyplot as plt
@@ -87,8 +88,12 @@ if __name__ == "__main__":
 [References: Pythonで学ぶ音声認識 機械学習実践シリーズ](https://www.amazon.co.jp/dp/429501138X/ref=cm_sw_r_tw_dp_TZK9K0H7NV2NR4SX3VDX)
 
 
-## Task1
-![Fig1](image/figure1.png)
+## Task1 
+ 
+ The 7ch of open-eeg shows frequencies of 0~3Hz in addition to 8~10Hz.  
+ 
+
+![Fig1](image/figure1.jpg)
 
 ``` task1.m
 % task1
@@ -124,8 +129,11 @@ end
 ```
 
 
-## Task2
-![Fig2](image/figure2.png)  
+## Task2 
+
+Ch1 of open-eeg shows a wider range of frequencies than ch7.
+
+![Fig2](image/figure2.jpg)  
  
 ``` task2.m
 
@@ -159,7 +167,7 @@ end
 ```
 
 ## Task3
-![Fig3](image/figure3.png)  
+![Fig3](image/figure3.jpg)  
  
 ``` task3.m
 % task3
@@ -169,7 +177,6 @@ openEEG = y(:, 256*10+1:length(y))
 load('../EEG-sample/close.mat','y');
 closeEEG = y(:, 256*10+1:length(y))
 Ch ={'Fz', 'Cz', 'P3', 'Pz', 'P4', 'PO7','Oz','PO8'};
-
 figure;
 for ii = 1:8
     close_alpha= powercalctask3(closeEEG(:,1:256*120), ii, ii, Ch{ii});
