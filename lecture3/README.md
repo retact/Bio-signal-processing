@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
 ## Task1 
  
- The 7ch of open-eeg shows frequencies of 0~3Hz in addition to 8~10Hz.  
+ The 7ch of open-eeg shows frequencies of 0-3Hz in addition to 8-10Hz.  
  
 
 ![Fig1](image/figure1.jpg)
