@@ -1,0 +1,13 @@
+t70 = find(y(1,:) <= 70, 1, 'last');
+t80 = find(y(1,:) <= 80, 1, 'last');
+figure(1);
+subplot(2,1,1);
+plot(y(1, t70:t80), y(10, t70:t80));
+title('Ch9');
+xlabel('Time [s]');
+ylabel('Trigger [V]');
+subplot(2,1,2);
+plot(y(1, t70:t80), y(11, t70:t80));
+title('Ch10');
+xlabel('Time [s]');
+ylabel('Trigger [V]');
